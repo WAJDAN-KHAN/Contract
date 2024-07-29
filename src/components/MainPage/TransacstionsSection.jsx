@@ -14,10 +14,12 @@ export const TransacstionsSection = () => {
               style={{ borderRadius: 'cal(0.75rem - (1px)) cal(0.75rem - (1px)) 0 0' }}
             >
               <h2 className="roboto text-[.9375rem] mb-0 font-medium">Latest Blocks</h2>
-              <button class="bg-white text-[12.5625px] flex items-center hover:bg-gray-100 text-gray-800 font-semibold py-[0.25rem] px-[0.25rem] border border-[#e9ecef] rounded-[0.375rem] shadow">
-                <img src="/assets/menu.png" className="  h-auto w-full me-1" alt="" />
-                Customize
-              </button>
+              <a href="/home">
+                <button class="bg-white text-[12.5625px] flex items-center hover:bg-gray-100 text-gray-800 font-semibold py-[0.25rem] px-[0.25rem] border border-[#e9ecef] rounded-[0.375rem] shadow">
+                  <img src="/assets/menu.png" className="  h-auto w-full me-1" alt="" />
+                  Customize
+                </button>
+              </a>
             </div>
             <div className="p-[1rem]" style={{ flex: '1 1 auto' }}>
               <div className="grid grid-cols-12  ">
