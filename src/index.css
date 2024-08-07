@@ -213,3 +213,20 @@ pre {
 .headerBg {
   background: linear-gradient(270deg, rgba(109, 5, 5, 0.4) 0%, rgba(211, 10, 10, 0.4) 100%);
 }
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #121212; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fc0000;
+  border-radius: 10px; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fc0000; /* Color of the scrollbar thumb on hover */
+}

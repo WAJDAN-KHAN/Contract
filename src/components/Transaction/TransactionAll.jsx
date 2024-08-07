@@ -7,6 +7,7 @@ const tableHeading = [
     id: 1,
     name: 'Transaction Hash',
     color: 'white',
+    img: '/assets/tabler-icon-info-circle.svg',
   },
   {
     id: 2,
@@ -16,38 +17,32 @@ const tableHeading = [
   },
   {
     id: 3,
-    name: 'Nonce',
+    name: 'Block',
     color: 'white',
   },
   {
     id: 4,
-    name: 'Last Seen',
-    color: 'white',
+    name: 'Age',
+    color: '#46DB78',
   },
   {
     id: 5,
-    name: 'Gas Limit',
-    color: '#46DB78',
+    name: 'From',
+    color: '#ffff',
   },
   {
     id: 6,
-    name: 'Gas Price',
-    color: '#46DB78',
-    img: '/assets/tabler-icon-info-circle.svg',
+    name: 'To',
+    color: '#ffff',
   },
   {
     id: 7,
-    name: 'From',
-    color: 'white',
+    name: 'Amount',
+    color: '#46DB78',
   },
   {
     id: 8,
-    name: 'To',
-    color: 'white',
-  },
-  {
-    id: 9,
-    name: 'Amount',
+    name: 'Txn Fee',
     color: '#46DB78',
   },
 ];
@@ -76,7 +71,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -100,7 +94,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -124,7 +117,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -148,7 +140,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -172,7 +163,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -196,7 +186,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -220,7 +209,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -244,7 +232,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -268,7 +255,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -292,7 +278,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     {
       col1: {
@@ -316,7 +301,6 @@ export const TransactionAll = () => {
         img: '/assets/tabler-icon-files.svg',
         color: '#46DB78',
       },
-      col9: '0.00038325 Algo',
     },
     // Add more rows as needed
   ]);
@@ -328,13 +312,13 @@ export const TransactionAll = () => {
       >
         <div className="p-5 flex items-center justify-center md:justify-between md:flex-row flex-col gap-4 text-center md:text-start">
           <div>
-            <h1 className="text-white font-semibold text-[20px]">A total of 114,429 pending txns found</h1>
-            <p className="text-[#A5A5AB] font-normal text-[16px] mt-2">Showing the last 10000 records</p>
+            <h1 className="text-white font-semibold text-[20px]">More than 2,455,540,271 transactions found.</h1>
+            <p className="text-[#A5A5AB] font-normal text-[16px] mt-2">Displaying the most recent 500,000 records.</p>
           </div>
           <div className="">
             <button
               type="button"
-              className="text-white bg-[#FF0F0F]  flex items-center gap-1 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-[20px] py-[10px]   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className="text-white bg-[#FF0F0F]  flex items-center gap-1    font-medium rounded-lg text-sm px-[20px] py-[10px]    "
             >
               <img src="/assets/file-download.png" alt="" />
               Download Page Data

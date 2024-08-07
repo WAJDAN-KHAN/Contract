@@ -9,6 +9,7 @@ import { Header } from './components/Home/Header';
 import TransactionHero from './components/Transactions/TransactionHero';
 import TransactionMain from './components/Transactions/TransactionMain';
 import { PendingTransaction } from './components/Pending-transaction';
+import { Transaction } from './components/Transaction';
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/home" element={<Main />} />
-        <Route path="/token" element={<Token />} />
+        {/* <Route path="/token" element={<Token />} />
         <Route path="/details" element={<ItemsContainer />} />
-        <Route path="/transaction" element={<TransactionMain />} />
+        <Route path="/transaction" element={<TransactionMain />} /> */}
         <Route path="/pending-transaction" element={<PendingTransaction />} />
+        <Route path="/transaction" element={<Transaction />} />
       </Routes>
       <Footer1 />
     </Router>

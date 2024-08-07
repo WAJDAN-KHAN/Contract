@@ -6,7 +6,7 @@ import { TransacstionsSection } from './TransacstionsSection';
 export const MainPage = () => {
   return (
     <>
-      <div className="pb-20 2xl:container md:px-[20px] mx-auto px-[15px]">
+      <div className=" ">
         {/* <Header /> */}
         <Explorer />
         <div className="pb-20 2xl:container md:px-[20px] mx-auto px-[15px]  ">
