@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
+  const dropdownRef = useRef(null);
+  const [dropdownPosition, setDropdownPosition] = useState({});
+
+  useEffect(() => {
+    if (isOpen && dropdownRef.current) {
+      const { bottom } = dropdownRef.current.getBoundingClientRect();
+      const position = {};
+
+      if (bottom > window.innerHeight) {
+        position.bottom = '100%';
+        position.top = 'auto';
+      } else {
+        position.top = '100%';
+        position.bottom = 'auto';
+      }
+
+      setDropdownPosition(position);
+    }
+  }, [isOpen]);
+
   return (
-    <div className="dropdown relative">
+    <div className="dropdown relative" ref={dropdownRef}>
       <div
         onClick={toggleDropdown}
         className="flex gap-[.25rem] cursor-pointer items-center py-[.25rem] text-[14px] rounded-[0.375rem] transition-all text-[#ADADAD] hover:text-white"
@@ -11,8 +31,8 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
       </div>
       {isOpen && (
         <div
-          className="min-w-[18rem] z-[99] right-0 bg-white absolute mt-3 text-[.78515625rem] p-4 rounded-[0.5rem]"
-          style={{ boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.15)' }}
+          className="min-w-[18rem] z-[99] right-0 bg-white absolute md:mt-3 mt-[-20px] text-[.78515625rem] p-4 rounded-[0.5rem]"
+          style={{ boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.15)', ...dropdownPosition }}
         >
           <div className="text-end text-[10.05px] text-[#6c757d] mt-n2 mb-1">Sponsored</div>
           {items.map((item, index) => (

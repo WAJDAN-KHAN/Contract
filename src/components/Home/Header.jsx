@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Dropdown from '../ui/Dropdown';
 import arrow from '../assets1/arrow.svg';
 import uparrow from '../assets1/uparrow.svg';
@@ -126,13 +126,30 @@ const dropdownItems = {
 };
 
 export const Header = () => {
-  const [openDropdown, setOpenDropdown] = useState(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const toggleDropdown = (index) => {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
+  const handleClickOutside = (event) => {
+    if (!event.target.closest('.dropdown')) {
+      setOpenDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    if (openDropdown) {
+      document.addEventListener('click', handleClickOutside);
+    } else {
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [openDropdown]);
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
