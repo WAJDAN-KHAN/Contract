@@ -60,17 +60,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -83,17 +75,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -106,17 +90,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -129,17 +105,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -152,17 +120,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -175,17 +135,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -198,17 +150,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -221,17 +165,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -244,17 +180,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -267,17 +195,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     {
       col1: {
@@ -290,17 +210,9 @@ export const TransactionAll = () => {
       col4: '2 secs ago',
       col5: '21000',
       col6: '0.02 Gwei',
-      col7: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col7: '2 secs ago',
 
-      col8: {
-        value: '0x5ca348623be...',
-        img: '/assets/tabler-icon-files.svg',
-        color: '#46DB78',
-      },
+      col8: '2 secs ago',
     },
     // Add more rows as needed
   ]);
