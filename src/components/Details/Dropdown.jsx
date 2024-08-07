@@ -6,17 +6,17 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
     <div className="dropdown relative">
       <div
         onClick={toggleDropdown}
-        className="flex gap-[.25rem] cursor-pointer items-center bg-[#0784c3] px-[.3rem] py-[.25rem] text-[0.78515625rem] text-white rounded-[0.375rem] transition-all hover:bg-[#0670a6] "
+        className="flex gap-[.25rem] cursor-pointer items-center px-[.3rem] py-[.25rem] text-[0.78515625rem] rounded-[0.375rem] transition-all  "
       >
-        {label}
+        <p className="text-[#ADADAD] ">{label}</p>
         <RiArrowDropDownLine className="text-xl" />
       </div>
       {isOpen && (
         <div
           className={`min-w-[18rem] z-[99] mx-auto sm:absolute sm:right-0 bg-white mt-3 text-[.78515625rem] p-4 rounded-[0.5rem] ${
-            window.innerWidth < 640 ? 'fixed left-10 right-10' : ''
-          } ${window.innerWidth < 340 ? 'fixed left-6 right-6' : ''}`}
-          style={{ boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.15) ' }}
+            window.innerWidth < 640 ? "fixed left-10 right-10" : ""
+          } ${window.innerWidth < 340 ? "fixed left-6 right-6" : ""}`}
+          style={{ boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15) " }}
         >
           <div className="text-end text-[10.05px] text-[#6c757d] mt-n2 mb-1">
             Sponsored
@@ -48,7 +48,7 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
         </div>
       )}
     </div>
-  )
+  );
 };
 
 export default Dropdown;

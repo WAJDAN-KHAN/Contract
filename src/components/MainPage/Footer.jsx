@@ -40,61 +40,91 @@ const links3 = [
 export const Footer = () => {
   return (
     <div className="  2xl:container md:px-[20px] mx-auto px-[15px]">
+      {/* above footer */}
       <div className="flex  justify-between items-baseline py-6">
+        {/* social media links */}
         <div className="flex gap-2">
           <a
             href="#"
             className="w-[2rem] h-[2rem] flex items-center justify-center rounded-[50%] bg-[#e9ecef] hover:bg-[#dee2e6]"
           >
-            <img src="/assets/twitter.png" className="max-w-[13px] w-full h-auto object-contain" alt="" />
+            <img
+              src="/assets/twitter.png"
+              className="max-w-[13px] w-full h-auto object-contain"
+              alt=""
+            />
           </a>
           <a
             href="#"
             className="w-[2rem] h-[2rem] flex items-center justify-center rounded-[50%] bg-[#e9ecef] hover:bg-[#dee2e6]"
           >
-            <img src="/assets/medium.png" className="max-w-[13px] w-full h-auto object-contain" alt="" />
+            <img
+              src="/assets/medium.png"
+              className="max-w-[13px] w-full h-auto object-contain"
+              alt=""
+            />
           </a>
           <a
             href="#"
             className="w-[2rem] h-[2rem] flex items-center justify-center rounded-[50%] bg-[#e9ecef] hover:bg-[#dee2e6]"
           >
-            <img src="/assets/facebook.png" className="max-w-[13px] w-full h-auto object-contain" alt="" />
+            <img
+              src="/assets/facebook.png"
+              className="max-w-[13px] w-full h-auto object-contain"
+              alt=""
+            />
           </a>
           <a
             href="#"
             className="w-[2rem] h-[2rem] flex items-center justify-center rounded-[50%] bg-[#e9ecef] hover:bg-[#dee2e6]"
           >
-            <img src="/assets/reddit.png" className="max-w-[13px] w-full h-auto object-contain" alt="" />
+            <img
+              src="/assets/reddit.png"
+              className="max-w-[13px] w-full h-auto object-contain"
+              alt=""
+            />
           </a>
         </div>
+        {/* social media links */}
+
         <a href="#" className="text-[#081d35] text-[14.4992px]">
           Back to Top
         </a>
       </div>
+      {/* above footer */}
       <hr class="my-0" />
       <div className="py-8 lg:py-10">
         <div className="grid grid-cols-12 gap-5 lg:gap-5">
           <div className="lg:col-span-3 col-span-12  ">
             <div className="flex items-center mb-3">
-              <img src="/assets/ethereum-original.svg" className="max-w-[20px] h-auto me-2" alt="" />
+              <img
+                src="/assets/ethereum-original.svg"
+                className="max-w-[20px] h-auto me-2"
+                alt=""
+              />
               <span className="text-[1.171875rem]">Powered by Ethereum</span>
             </div>
             <p class="text-[.78515625rem]">
-              Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts
-              platform.
+              Etherscan is a Block Explorer and Analytics Platform for Ethereum,
+              a decentralized smart contracts platform.
             </p>
             <div className="hidden lg:block">
-              <img src="/assets/map.png" className="max-w-[280px] w-full h-auto opacity-50" alt="" />
+              <img
+                src="/assets/map.png"
+                className="max-w-[280px] w-full h-auto opacity-50"
+                alt=""
+              />
             </div>
           </div>
+          {/* company */}
           <div className="col-span-6 md:col-span-3  mb-10 md:mb-0">
             <h4 class="text-[.9062rem] font-medium mb-3">Company</h4>
             <ul className="list-none space-y-2 text-sm mb-0">
               {links.map((link, index) => (
                 <li key={index} className="relative mb-[.75rem]">
-                  {link.text == 'Careers' ? (
+                  {link.text == "Careers" ? (
                     <a class="text-[#081d35] hover:text-[#066a9c]" href="#">
-                      <span class="me-1">Careers</span>{' '}
+                      <span class="me-1">Careers</span>{" "}
                       <span class="bg-[#0784c3] text-white text-[.875em] font-medium text-nowrap rounded-[50rem] p-1 px-2">
                         We're Hiring!
                       </span>
@@ -125,9 +155,9 @@ export const Footer = () => {
             <ul className="list-none space-y-2 text-sm mb-0">
               {links3.map((link, index) => (
                 <li key={index} className="relative mb-[.75rem]">
-                  {link.text == 'Careers' ? (
+                  {link.text == "Careers" ? (
                     <a class="text-[#081d35] hover:text-[#066a9c]" href="#">
-                      <span class="me-1">Careers</span>{' '}
+                      <span class="me-1">Careers</span>{" "}
                       <span class="bg-[#0784c3] text-white text-[.875em] font-medium text-nowrap rounded-[50rem] p-1 px-2">
                         We're Hiring!
                       </span>
@@ -143,10 +173,13 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      {/* last */}
       <div className="py-4 border-t border-[#e9ecef]">
         <div className="flex items-center justify-between flex-wrap gap-3">
           <div className="mb-2 md:mb-0">
-            <p class="mb-0 text-[12.5625px] text-[#212529]">Etherscan © 2024 (A1)</p>
+            <p class="mb-0 text-[12.5625px] text-[#212529]">
+              Etherscan © 2024 (A1)
+            </p>
           </div>
           <div className="md:text-end">
             <p className="mb-0 text-[12.5625px] text-[#212529]">
@@ -156,7 +189,11 @@ export const Footer = () => {
                   0x71c765...d8976f
                 </span>
               </a>
-              <img src="/assets/heart.png" className="max-w-[13px] h-auto w-full object-contain" alt="" />
+              <img
+                src="/assets/heart.png"
+                className="max-w-[13px] h-auto w-full object-contain"
+                alt=""
+              />
             </p>
           </div>
         </div>

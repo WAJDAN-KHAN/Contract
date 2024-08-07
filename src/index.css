@@ -53,6 +53,7 @@ body {
   /* font-family: "helvetica", sans-serif; */
   font-size: 16px;
   font-family: 'Roboto', sans-serif !important;
+  background-color: #000;
 }
 a {
   text-decoration: none;
@@ -94,7 +95,7 @@ a:hover {
 }
 
 .bg-effec {
-  background-image: url('../public/assets/waves-light.svg');
+  background-image: url('../public/assets/Group.png');
 }
 
 .form-select {
@@ -109,6 +110,7 @@ a:hover {
 .form-control {
   display: block;
   width: 100%;
+  /* max-width: 90rem; */
   padding: 0.3rem 0.6rem;
   font-size: 0.9062rem;
   font-weight: 400;
@@ -116,6 +118,20 @@ a:hover {
   background-clip: padding-box;
   appearance: none;
   border-radius: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control1 {
+  display: block;
+  width: 100%;
+  /* max-width: 90rem; */
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9062rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  appearance: none;
+  border-radius: 6px 0 0 6px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -193,4 +209,7 @@ pre {
   margin-bottom: 1rem;
   overflow: auto;
   font-size: 0.875em;
+}
+.headerBg {
+  background: linear-gradient(270deg, rgba(109, 5, 5, 0.4) 0%, rgba(211, 10, 10, 0.4) 100%);
 }

@@ -1,18 +1,26 @@
 import React from 'react';
+import coin from "../assets1/coin.png"
 
 export const Explorer = () => {
   return (
     <div className="bg-[#081d35] pt-14 pb-20 bg-effec">
       <div className="2xl:container md:px-[20px] mx-auto px-[15px]">
-        <div className="grid grid-cols-12  items-center">
-          <div className="md:col-span-9 lg:col-span-7 col-span-12 mb-5">
-            <h1 className="text-white text-[1.23046875rem] font-medium roboto mb-3">
-              The Ethereum Blockchain Explorer
+        <div className="grid justify-items-center items-center ">
+          <div className="mb-5">
+            <h1 className="text-white text-center sm:text-[32px] text-[24px] font-medium roboto mb-2 ">
+              The Fry Networks Blockchain Explorer
             </h1>
+            <p className="text-[16px] text-center text-[#A5A5AB] font-normal mb-5">
+              Building a Greener Future with Decentralized Networks
+            </p>
             <form action="" className="mb-3">
-              <div className="rounded bg-white p-1.5 gap-2 flex items-center">
-                <div className="hidden sm:block">
-                  <select name="" className=" form-select outline-none text-[.9375rem] border-0" id="">
+              <div className="rounded bg-white p-1.5 gap-2 flex mx-auto items-center justify-center w-[80vw] max-w-[45rem]">
+                <div className="hidden sm:block bg-[#FF0F0F] sm:p-2 p-0 rounded-[6px]">
+                  <select
+                    name=""
+                    className="form-select bg-[#FF0F0F] outline-none text-[.9375rem] border-0"
+                    id=""
+                  >
                     <option selected="" value="0">
                       All Filters
                     </option>
@@ -40,31 +48,30 @@ export const Explorer = () => {
                 <div className="">
                   <button
                     type="button"
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    className="text-white bg-[#FF0F0F]  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                   >
                     <img src="/assets/search.png" alt="" />
                   </button>
                 </div>
               </div>
             </form>
-            <p className="text-white text-opacity-75 text-[14.4992px] mb-0 noindex-section inline-block">
-              <span className="inline">
-                <b>Sponsored:</b>&nbsp;
-                <img src="/assets/rollbit_20.png" className="align-middle inline " alt="Rollbit logo" /> <b>Rollbit</b>:
-                Sweet Bonanza 1000 now available 🍬 Instant deposits &amp; withdrawals!&nbsp;
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="nofollow"
-                  className="text-[#0784c3]"
-                  title="Links to an External Advertiser site"
-                >
-                  <b>Play Now!</b>
-                </a>
-              </span>
-            </p>
           </div>
         </div>
+        <p className="text-white text-opacity-75 sm:text-[14.4992px] text-[12px] text-center sm:text-end mb-0 ">
+          <span className="inline">
+            <b>Featured:</b>&nbsp;
+            <img
+              src={coin}
+              className="align-middle inline "
+              alt="Rollbit logo"
+            />
+            <b> Trade</b> 30+ Crypto - BTC, ETH, SOL, MOG, WIF. 1,000x leverage,
+            instant execution!{" "}
+            <a href="#" className="text-[#46DB78] underline">
+              Trade Now!
+            </a>
+          </span>
+        </p>
       </div>
     </div>
   );

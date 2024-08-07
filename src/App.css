@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+.footer1{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  /* justify-content: space-between; */
+}
