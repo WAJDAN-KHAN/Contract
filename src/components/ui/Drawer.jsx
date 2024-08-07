@@ -12,7 +12,7 @@ const Drawer = ({ isOpen, toggleDrawer, dropdownItems, openDropdown, toggleDropd
       className={`fixed inset-0 z-50 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
     >
       <div className="absolute inset-0 bg-black opacity-50" onClick={toggleDrawer}></div>
-      <div className="absolute inset-y-0 right-0 w-1/2 bg-black text-white p-4 overflow-y-auto">
+      <div className="absolute inset-y-0 right-0 w-1/2 bg-black text-white p-4  ">
         <div className="flex justify-between items-center gap-2 mt-10 p-6">
           <img src={logo} className="sm:w-[190px] w-[160px]" alt="" />
           <button onClick={toggleDrawer}>

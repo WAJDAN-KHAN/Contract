@@ -49,23 +49,22 @@ const Footer1 = () => {
                   Join The <span className="text-[#FF0F0F]">Evolution</span>
                 </p>
                 <form action="" className="mb-3 mt-1 -ml-2.5">
-                  <div className="rounded mb-5 gap-0 flex items-center justify-center w-[19rem] max-w-[30rem]">
+                  <div className="rounded mb-5 mt-3 gap-0 relative  md:w-[19rem] w-full md:max-w-[30rem]">
                     <div className="">
                       <input
                         type="text"
-                        class="px-5 py-3 rounded-tl-lg rounded-bl-lg text-[.9375rem] border-0 outline-none"
+                        class="px-5 py-3 rounded-tl-lg rounded-bl-lg w-[97%] text-[.9375rem] border-0 outline-none"
                         autocomplete="off"
                         spellcheck="false"
                         placeholder="Enter Email Address"
                         aria-describedby="button-header-search"
                         name="q"
-                        maxlength="68"
                       />
                     </div>
                     <div className="">
                       <button
                         type="button"
-                        className="text-white bg-[#FF0F0F]   font-medium rounded-tr-lg rounded-br-lg text-sm px-5 py-3 "
+                        className="text-white bg-[#FF0F0F] absolute top-0 right-0   font-medium rounded-tr-lg rounded-br-lg text-sm px-5 py-3 "
                       >
                         <img src="/assets/search.png" className="w-[23px] h-[23px]" alt="" />
                       </button>
@@ -74,7 +73,7 @@ const Footer1 = () => {
                 </form>
               </div>
             </div>
-            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-3 gap-1 md:col-span-5 col-span-3 sm:mr-8 mr-0 ">
+            <div className="grid md:grid-cols-3 grid-cols-2 md:gap-3 gap-1 md:col-span-5 col-span-3 sm:mr-8 mr-0 ">
               {/* company */}
               <div className="mb-5 md:mb-0">
                 <h4 class="text-[24px] text-[#FFFFFF] font-semibold mb-3 ">Quick Links</h4>
