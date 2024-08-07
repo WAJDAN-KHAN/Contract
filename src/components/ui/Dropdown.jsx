@@ -9,12 +9,12 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
       const { bottom, height } = dropdownRef.current.getBoundingClientRect();
       const position = {};
 
-      // Check if there's enough space below the dropdown
+      // Check if the dropdown is cutting off at the bottom
       if (bottom + height > window.innerHeight) {
+        position.bottom = '100%'; // Open upwards
         position.top = 'auto';
-        position.bottom = '100%'; // Position above the button
       } else {
-        position.top = '100%'; // Position below the button
+        position.top = '100%'; // Open downwards
         position.bottom = 'auto';
       }
 
