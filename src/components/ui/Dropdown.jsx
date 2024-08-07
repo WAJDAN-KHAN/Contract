@@ -6,14 +6,15 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
 
   useEffect(() => {
     if (isOpen && dropdownRef.current) {
-      const { bottom } = dropdownRef.current.getBoundingClientRect();
+      const { bottom, height } = dropdownRef.current.getBoundingClientRect();
       const position = {};
 
-      if (bottom > window.innerHeight) {
-        position.bottom = '100%';
+      // Check if there's enough space below the dropdown
+      if (bottom + height > window.innerHeight) {
         position.top = 'auto';
+        position.bottom = '100%'; // Position above the button
       } else {
-        position.top = '100%';
+        position.top = '100%'; // Position below the button
         position.bottom = 'auto';
       }
 
