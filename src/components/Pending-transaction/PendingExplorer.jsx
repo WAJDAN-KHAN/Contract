@@ -12,7 +12,7 @@ export const PendingExplorer = () => {
           </div>
           <div className="text-white  col-span-12 md:col-span-8">
             <div className="flex items-center mt-20">
-              <p className="text-[14px] flex items-center">
+              <p className="text-[14px] flex items-center flex-wrap">
                 <strong>Featured:</strong>
                 <img src="/assets/green-dot.png" alt="" className="mx-1" />
                 <span className="text-gray-200 mr-2">

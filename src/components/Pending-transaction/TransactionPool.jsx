@@ -7,9 +7,9 @@ export const TransactionPool = () => {
         className="card py-10 px-5  mb-4 mt-[-3rem] rounded-[0.75rem] bg-[#121212]"
         style={{ boxShadow: '0 0.5rem 1.2rem rgb(189 197 209 / 20%)' }}
       >
-        <div className="flex items-center  justify-center md:justify-between lg:flex-row flex-col ">
+        <div className="flex items-center gap-4  justify-center md:justify-between lg:flex-row flex-col ">
           <div className="md:max-w-[244px] max-w-full ">
-            <img src="/assets/contain.svg" className="max-w-full object-contain w-full h-auto" alt="" />
+            <img src="/assets/contain.svg" className="max-w-full  w-full h-auto" alt="" />
           </div>
           <div className="md:max-w-[637px] w-full max-w-full ml-auto">
             <div className="w-full relative gap-3 bg-[#171717] rounded-[8px] p-[15px] flex items-center">
