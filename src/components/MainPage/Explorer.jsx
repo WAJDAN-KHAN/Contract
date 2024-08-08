@@ -1,5 +1,5 @@
 import React from 'react';
-import coin from "../assets1/coin.png"
+import coin from '../assets1/coin.png';
 
 export const Explorer = () => {
   return (
@@ -15,28 +15,39 @@ export const Explorer = () => {
             </p>
             <form action="" className="mb-3">
               <div className="rounded bg-white p-1.5 gap-2 flex mx-auto items-center justify-center w-[80vw] max-w-[45rem]">
-                <div className="hidden sm:block bg-[#FF0F0F] sm:p-2 p-0 rounded-[6px]">
-                  <select
-                    name=""
-                    className="form-select bg-[#FF0F0F] outline-none text-[.9375rem] border-0"
-                    id=""
-                  >
-                    <option selected="" value="0">
-                      All Filters
-                    </option>
-                    <option value="1">Addresses</option>
-                    <option value="2">Tokens</option>
-                    <option value="3">Name Tags</option>
-                    <option value="6">Domain Names</option>
-                    <option value="4">Labels</option>
-                    <option value="5">Websites</option>
-                  </select>
-                </div>
+                <select
+                  name=""
+                  className=" p-1 rounded-[4px] cursor-pointer bg-[#FF0F0F] w-[95px] h-[40px] outline-none text-[14px] text-white border-0"
+                  id=""
+                >
+                  <option selected="" value="0" className="text-[14px] text-white bg-[#FF0F0F]">
+                    All Filters
+                  </option>
+                  <option value="1" className="text-[14px] text-white bg-[#FF0F0F]">
+                    Addresses
+                  </option>
+                  <option value="2" className="text-[14px] text-white bg-[#FF0F0F]">
+                    Tokens
+                  </option>
+                  <option value="3" className="text-[14px] text-white bg-[#FF0F0F]">
+                    Name Tags
+                  </option>
+                  <option value="6" className="text-[14px] text-white bg-[#FF0F0F]">
+                    Domain Names
+                  </option>
+                  <option value="4" className="text-[14px] text-white bg-[#FF0F0F]">
+                    Labels
+                  </option>
+                  <option value="5" className="text-[14px] text-white bg-[#FF0F0F]">
+                    Websites
+                  </option>
+                </select>
+
                 <div className="flex-grow-[1] relative">
                   <input
                     id="search-panel"
                     type="text"
-                    class="form-control text-[.9375rem] border-0 pe-8 outline-none"
+                    class=" px-2 w-full text-[.9375rem] border-none pe-8 outline-none"
                     autocomplete="off"
                     spellcheck="false"
                     placeholder="Search by Address / Txn Hash / Block / Token / Domain Name"
@@ -48,7 +59,7 @@ export const Explorer = () => {
                 <div className="">
                   <button
                     type="button"
-                    className="text-white bg-[#FF0F0F]  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    className="text-white bg-[#FF0F0F]  focus:ring-4 focus:ring-blue-300 font-medium rounded-[4px] text-sm px-5 py-2.5   "
                   >
                     <img src="/assets/search.png" alt="" />
                   </button>
@@ -60,13 +71,8 @@ export const Explorer = () => {
         <p className="text-white text-opacity-75 sm:text-[14.4992px] text-[12px] text-center sm:text-end mb-0 ">
           <span className="inline">
             <b>Featured:</b>&nbsp;
-            <img
-              src={coin}
-              className="align-middle inline "
-              alt="Rollbit logo"
-            />
-            <b> Trade</b> 30+ Crypto - BTC, ETH, SOL, MOG, WIF. 1,000x leverage,
-            instant execution!{" "}
+            <img src={coin} className="align-middle inline " alt="Rollbit logo" />
+            <b> Trade</b> 30+ Crypto - BTC, ETH, SOL, MOG, WIF. 1,000x leverage, instant execution!{' '}
             <a href="#" className="text-[#46DB78] underline">
               Trade Now!
             </a>

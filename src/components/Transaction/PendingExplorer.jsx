@@ -3,7 +3,7 @@ import coin from '../assets1/coin.png';
 
 export const PendingExplorer = () => {
   return (
-    <div className="bg-[#081d35] h-[400px] py-[40px]    bg-effec">
+    <div className=" h-[400px] py-[40px]    bg-effec">
       <div className="px-[15px]   container  h-full flex items-center   mx-auto xl:max-w-[1320px]  ">
         <div className="grid grid-cols-12 lg:py-[40px]">
           <div className="text-white text-center md:text-start col-span-12 md:col-span-4">

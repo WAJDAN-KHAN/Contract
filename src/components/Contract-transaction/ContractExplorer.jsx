@@ -1,17 +1,17 @@
 import React from 'react';
 import coin from '../assets1/coin.png';
 
-export const PendingExplorer = () => {
+export const ContractExplorer = () => {
   return (
     <div className=" h-[400px] py-[40px]    bg-effec">
-      <div className="px-[15px]  h-full flex items-center container  mx-auto xl:max-w-[1320px]  ">
-        <div className="grid grid-cols-12 lg:py-[40px]">
-          <div className="text-white text-center md:text-start col-span-12 md:col-span-4">
-            <h1 className="font-bold text-[24px] md:text-[40px]">Pending Transactions</h1>
+      <div className="px-[15px]   container  h-full flex items-center w-full   mx-auto xl:max-w-[1320px]  ">
+        <div className=" w-full">
+          <div className="text-white text-center md:text-start ">
+            <h1 className="font-bold text-[24px] md:text-[40px]">Contract Internal Transactions</h1>
             <p className="text-gray-200">Excluded Uncles as a result oF “Chain Reorganizations”</p>
           </div>
-          <div className="text-white  col-span-12 md:col-span-8">
-            <div className="flex items-center md:mt-20 mt-4  md:text-start">
+          <div className="text-white  ">
+            <div className="flex items-center justify-end md:mt-5 mt-4  md:text-start">
               <p className="text-[14px] flex gap-2 items-center  ">
                 <strong>Featured:</strong>
                 <img src="/assets/green-dot.png" alt="" className="mx-1" />

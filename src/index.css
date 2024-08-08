@@ -95,7 +95,10 @@ a:hover {
 }
 
 .bg-effec {
-  background-image: url('../public/assets/Group.png');
+  background: linear-gradient(270deg, rgba(109, 5, 5, 0.4) 0%, rgba(211, 10, 10, 0.4) 100%),
+    url('../public/assets/Group.png');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
 }
 
 .form-select {
@@ -147,7 +150,7 @@ a:hover {
 }
 hr {
   margin: 1rem 0;
-  color: #e9ecef;
+  color: #23262f;
   border: 0;
   border-top: 1px solid;
   opacity: 1;

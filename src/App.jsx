@@ -10,6 +10,8 @@ import TransactionHero from './components/Transactions/TransactionHero';
 import TransactionMain from './components/Transactions/TransactionMain';
 import { PendingTransaction } from './components/Pending-transaction';
 import { Transaction } from './components/Transaction';
+import { ContractTransaction } from './components/Contract-transaction';
+import { Blocks } from './components/Blocks';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/transaction" element={<TransactionMain />} /> */}
         <Route path="/pending-transaction" element={<PendingTransaction />} />
         <Route path="/transaction" element={<Transaction />} />
+        <Route path="/contact-transaction" element={<ContractTransaction />} />
+        <Route path="/blocks" element={<Blocks />} />
       </Routes>
       <Footer1 />
     </Router>
