@@ -6,8 +6,6 @@ import ItemsContainer from './components/Details/ItemsContainer';
 import { MainPage } from './components/MainPage/MainPage';
 import Footer1 from './components/MainPage/Footer1';
 import { Header } from './components/Home/Header';
-import TransactionHero from './components/Transactions/TransactionHero';
-import TransactionMain from './components/Transactions/TransactionMain';
 import { PendingTransaction } from './components/Pending-transaction';
 import { Transaction } from './components/Transaction';
 import { ContractTransaction } from './components/Contract-transaction';

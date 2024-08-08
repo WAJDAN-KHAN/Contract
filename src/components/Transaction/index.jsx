@@ -1,7 +1,7 @@
 import React from 'react';
 import { PendingExplorer } from './PendingExplorer';
 import { TransactionAll } from './TransactionAll';
-import TransactionPriceSection from './TransactionPool';
+import TransactionPriceSection from '../Contract-transaction/TransactionPool';
 
 export const Transaction = () => {
   return (
